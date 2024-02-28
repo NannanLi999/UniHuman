@@ -1,6 +1,11 @@
 # UniHuman
 This repository provides the official code for CVPR 2024 paper UniHuman: A Unified Model For Editing Human Images in the Wild.
 
+## Environment Requirement
+Python 3.8
+
+`pip install numpy pillow requests`
+
 ## Download Data
 We provide the image links of our dataset in the zip files. See below for detailed instructions. Please note that we do not own the copyright of the images. It is solely your responsibility to check the original licenses of the images before using them. Any use of the images is at your own discretion and risk.
 
@@ -9,7 +14,8 @@ We provide the image links of our dataset in the zip files. See below for detail
 1) Download the annotations `wpose.zip` and unzip it under the current directory.
 2) Download the images **at the original resolution** to the folder `downloaded_data` using the links provided in `ood_test_reposing/image_urls.txt`.
 3) Run `python get_wpose_data.py` to preprocess the raw images. In our preprocessing pipeline, we crop a rectangle centering the subject in the image, resize its longest side to 1024 pixels, and then pad the image with white pixels to size 1024x1024.
-After the preprocessing, your directory structure should look like
+   
+After the above steps, your directory structure should look like
 ```bash
 .
 ├── downloaded_data
@@ -55,14 +61,14 @@ After the preprocessing, your directory structure should look like
   
 ## Citation
 Please cite our paper if you use the dataset in your work.
-`
+```
 @InProceedings{Li_UniHuman_2024,
     author    = {Nannan Li, Qing Liu, Krishna Kumar Singh, Yilin Wang, Jianming Zhang, Bryan A. Plummer, Zhe Lin},
     title     = {UniHuman: A Unified Model For Editing Human Images in the Wild},
     booktitle = {CVPR},
     year      = {2024},
 }
-`
+```
 
 ## License
 This dataset is released under [Adobe Research License](https://github.com/adobe-research/EntitySeg-Dataset/blob/main/LICENSE.md). The license prohibits commercial use and allows for non-commercial research use.
