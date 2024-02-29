@@ -4,7 +4,7 @@ This repository provides the official code for CVPR 2024 paper UniHuman: A Unifi
 ## Environment Requirement
 Python 3.8
 
-`pip install numpy pillow requests`
+`pip install numpy pillow requests`tqdm
 
 ## Download Data
 We provide the image links of our dataset in the zip files. See below for detailed instructions. Please note that we do not own the copyright of the images. It is solely your responsibility to check the original licenses of the images before using them. Any use of the images is at your own discretion and risk.
