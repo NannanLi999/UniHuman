@@ -42,7 +42,7 @@ get_wpose_data.py
 
 `wpose/densepose`: Densepose predictions of the processed images.
 
-`wpose/gt_parsing`: Ground truth parsing maps of the processed images. We use these parsing maps for all the comparison methods in our paper.
+`wpose/gt_parsing`: Annotated parsing maps of the processed images. We use these parsing maps for all the comparison methods in our paper.
 
 **WVTON** 
 
