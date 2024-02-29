@@ -11,7 +11,7 @@ We provide the image links of our dataset in the zip files. See below for detail
 
 ### Test Data
 **WPose**  
-1) Download the annotations `wpose.zip` and unzip it under the current directory.
+1) Download the annotations [wpose.zip](https://drive.google.com/file/d/12_ylfSfIBISNfFKJpNrjrEIkTpsictHr/view?usp=sharing) and unzip it under the current directory.
 2) Run `python get_wpose_data.py` to download and preprocess the raw images. The downloaded images will be stored at `downloaded_data`, and the preprocessed images will be saved at `wpose/images`. In our preprocessing pipeline, we crop a rectangle centering the subject in the image and resize its longest side to 1024 pixels.
    
 After the above steps, your directory structure should look like
