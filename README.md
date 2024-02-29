@@ -12,16 +12,15 @@ We provide the image links of our dataset in the zip files. See below for detail
 ### Test Data
 **WPose**  
 1) Download the annotations `wpose.zip` and unzip it under the current directory.
-2) Download the images **at the original resolution** to the folder `downloaded_data` using the links provided in `ood_test_reposing/image_urls.txt`.
-3) Run `python get_wpose_data.py` to preprocess the raw images. In our preprocessing pipeline, we crop a rectangle centering the subject in the image, resize its longest side to 1024 pixels, and then pad the image with white pixels to size 1024x1024.
+2) Run `python get_wpose_data.py` to download and preprocess the raw images. The downloaded images will be stored at `downloaded_data`, and the prepocessed images will be saved at `ood_test_reposing/images`. In our preprocessing pipeline, we crop a rectangle centering the subject in the image, resize its longest side to 1024 pixels, and then pad the image with white pixels to size 1024x1024.
    
 After the above steps, your directory structure should look like
 ```bash
 .
+get_wpose_data.py
 ├── downloaded_data
 ├── ood_test_reposing
     ├── image_urls.txt
-    ├── rename.txt
     ├── bbox.txt
     ├── test_pairs.txt
     ├── test_data.pkl
@@ -29,11 +28,9 @@ After the above steps, your directory structure should look like
     ├── densepose
     ├── gt_parsing
 ```
-`downloaded_data`: Downloaded original raw images.
+`downloaded_data`: Downloaded original raw images. The images under the folder are no longer needed once the preprocessing is finished.
 
 `ood_test_reposing/image_urls.txt`: Image links.
-
-`ood_test_reposing/rename.txt`: Each row is a pair of (image new name, raw image name).
 
 `ood_test_reposing/bbox.txt`: Bounding box coordinates in the original raw images. 
 
