@@ -10,7 +10,7 @@ Python 3.8
 We provide the image links of our dataset in the zip files. See below for detailed instructions. Please note that we do not own the copyright of the images. It is solely your responsibility to check the original licenses of the images before using them. Any use of the images is at your own discretion and risk.
 
 ### Test Data
-**WPose**  
+**Reposing Dataset: WPose**  
 1) Download the annotations [wpose.zip](https://drive.google.com/file/d/12_ylfSfIBISNfFKJpNrjrEIkTpsictHr/view?usp=sharing) and unzip it under the current directory.
 2) Run `python get_wpose_data.py` to download and preprocess the raw images. The downloaded images will be stored at `downloaded_data`, and the preprocessed images will be saved at `wpose/images`. In our preprocessing pipeline, we crop a rectangle centering the subject in the image and resize its longest side to 1024 pixels.
    
@@ -44,7 +44,7 @@ get_wpose_data.py
 
 `wpose/parsing`: Parsing maps of the processed images. These parsing maps have been used in all the comparison methods of our paper. Label 0 to 41 corresponds to \[background, hat, hair, glove, sunglasses, upper clothes, dress, coat, socks, pants, jumpsuits, scarf, skirt, face, left arm, right arm, left leg, right leg, left shoe, torso skin, right shoe, handheld object, else, head else, left eyebrow, right eyebrow, left eye, right eye, left pupil, right pupil, nose, mouth, left ear, right ear, beard, tooth, mask, glasses, scalp, left hand, right hand\]
 
-**WVTON** 
+**Tryon Dataset: WVTON** 
 
 
 ### Training Data
