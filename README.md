@@ -26,7 +26,7 @@ get_wpose_data.py
     ├── test_data.pkl
     ├── images
     ├── densepose
-    ├── gt_parsing
+    ├── parsing
 ```
 `downloaded_data`: Downloaded original raw images. The images under the folder are no longer needed once the preprocessing is finished.
 
@@ -42,7 +42,7 @@ get_wpose_data.py
 
 `wpose/densepose`: Densepose predictions of the processed images.
 
-`wpose/gt_parsing`: Annotated parsing maps of the processed images. We use these parsing maps for all the comparison methods in our paper.
+`wpose/parsing`: Parsing maps of the processed images. These parsing maps have been used in all the comparison methods of our paper. Label 0 to 41 corresponds to \[background, hat, hair, glove, sunglasses, upper clothes, dress, coat, socks, pants, jumpsuits, scarf, skirt, face, left arm, right arm, left leg, right leg, left shoe, torso skin, right shoe, handheld object, else, head else, left eyebrow, right eyebrow, left eye, right eye, left pupil, right pupil, nose, mouth, left ear, right ear, beard, tooth, mask, glasses, scalp, left hand, right hand\]
 
 **WVTON** 
 
