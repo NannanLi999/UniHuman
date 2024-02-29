@@ -12,14 +12,14 @@ We provide the image links of our dataset in the zip files. See below for detail
 ### Test Data
 **WPose**  
 1) Download the annotations `wpose.zip` and unzip it under the current directory.
-2) Run `python get_wpose_data.py` to download and preprocess the raw images. The downloaded images will be stored at `downloaded_data`, and the prepocessed images will be saved at `ood_test_reposing/images`. In our preprocessing pipeline, we crop a rectangle centering the subject in the image and resize its longest side to 1024 pixels.
+2) Run `python get_wpose_data.py` to download and preprocess the raw images. The downloaded images will be stored at `downloaded_data`, and the preprocessed images will be saved at `wpose/images`. In our preprocessing pipeline, we crop a rectangle centering the subject in the image and resize its longest side to 1024 pixels.
    
 After the above steps, your directory structure should look like
 ```bash
 .
 get_wpose_data.py
 ├── downloaded_data
-├── ood_test_reposing
+├── wpose
     ├── image_urls.txt
     ├── bbox.txt
     ├── test_pairs.txt
@@ -30,19 +30,19 @@ get_wpose_data.py
 ```
 `downloaded_data`: Downloaded original raw images. The images under the folder are no longer needed once the preprocessing is finished.
 
-`ood_test_reposing/image_urls.txt`: Image links.
+`wpose/image_urls.txt`: Image links.
 
-`ood_test_reposing/bbox.txt`: Bounding box coordinates in the original raw images. 
+`wpose/bbox.txt`: Bounding box coordinates in the original raw images. 
 
-`ood_test_reposing/test_pairs.txt`: Test image pairs of the same subject in different poses.
+`wpose/test_pairs.txt`: Test image pairs of the same subject in different poses.
 
-`ood_test_reposing/test_data.pkl`: A list of processed image paths and captions. Each entry is a dictionary like `{source: ood_test_reposing/images/1.png, source pose: ood_test_reposing/densepose/1.png, prompt:..., seg: ood_test_reposing/gt_parsing/1.png, target: ood_test_reposing/images/2.png, target pose: ood_test_reposing/densepose/2.png, }`
+`wpose/test_data.pkl`: A list of processed image paths and captions. Each entry is a dictionary like `{source: wpose/images/1.png, source pose: wpose/densepose/1.png, prompt:..., seg: wpose/gt_parsing/1.png, target: wpose/images/2.png, target pose: wpose/densepose/2.png, }`
 
-`ood_test_reposing/images`: Processed images.
+`wpose/images`: Processed images.
 
-`ood_test_reposing/densepose`: Densepose predictions of the processed images.
+`wpose/densepose`: Densepose predictions of the processed images.
 
-`ood_test_reposing/gt_parsing`: Ground truth parsing maps of the processed images. We use these parsing maps for all the comparison methods in our paper.
+`wpose/gt_parsing`: Ground truth parsing maps of the processed images. We use these parsing maps for all the comparison methods in our paper.
 
 **WVTON** 
 
