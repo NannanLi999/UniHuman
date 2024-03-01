@@ -37,9 +37,6 @@ def preprocess_reposing_data(download_dir='./downloaded_data'):
           
               name,left_idx,top_idx,right_idx,btm_idx=line.strip().split()
               
-              if osp.exists(os.path.join(out_dir,name)):
-                  continue
-
               raw_img_path=os.path.join(download_dir,name)
               image=Image.open(raw_img_path)
               img_np=np.array(image)          
