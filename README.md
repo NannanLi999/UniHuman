@@ -30,7 +30,7 @@ wpose
   ├── densepose
   ├── parsing
 ```
-`./downloaded_data`: Downloaded original raw images. The images under the folder are no longer needed once the preprocessing is finished.
+`./downloaded_data`: Downloaded original raw images. The images under this folder are no longer needed once the preprocessing is finished.
 
 `./wpose`: Preprocessed images and annotations.
 
@@ -62,7 +62,7 @@ wvton
   ├── mmpose_clothes
   ├── mmpose_human
 ```
-`./downloaded_data`: Downloaded original raw human images. The images under the folder are no longer needed once the preprocessing is finished.
+`./downloaded_data`: Downloaded original raw human images. The images under this folder are no longer needed once the preprocessing is finished.
 
 `./cl_downloaded_data`: Downloaded original raw clothing images. The images under the folder are no longer needed once the preprocessing is finished.
 
