@@ -16,19 +16,19 @@ We provide the image links of our dataset and their annotations in the zip files
    
 After the above steps, your directory structure should look like
 ```bash
-.
+README.md
 get_wpose_data.py
 get_wvton_data.py
-├── downloaded_data
-├── wpose
-    ├── README
-    ├── image_urls.txt
-    ├── bbox.txt
-    ├── test_pairs.txt
-    ├── test_data.pkl
-    ├── images
-    ├── densepose
-    ├── parsing
+downloaded_data
+wpose
+  ├── README
+  ├── image_urls.txt
+  ├── bbox.txt
+  ├── test_pairs.txt
+  ├── test_data.pkl
+  ├── images
+  ├── densepose
+  ├── parsing
 ```
 `./downloaded_data`: Downloaded original raw images. The images under the folder are no longer needed once the preprocessing is finished.
 
@@ -41,26 +41,26 @@ get_wvton_data.py
    
 After the above steps, your directory structure should look like
 ```bash
-.
+README.md
 get_wpose_data.py
 get_wvton_data.py
-├── cl_downloaded_data
-├── downloaded_data
-├── wvton
-    ├── README
-    ├── image_urls.txt
-    ├── clothing_urls.txt
-    ├── bbox.txt
-    ├── clothing_bbox.txt
-    ├── test_pairs.txt
-    ├── test_data.pkl
-    ├── images
-    ├── clothes
-    ├── clothes_mask
-    ├── densepose
-    ├── parsing
-    ├── mmpose_clothes
-    ├── mmpose_human
+cl_downloaded_data
+downloaded_data
+wvton
+  ├── README
+  ├── image_urls.txt
+  ├── clothing_urls.txt
+  ├── bbox.txt
+  ├── clothing_bbox.txt
+  ├── test_pairs.txt
+  ├── test_data.pkl
+  ├── images
+  ├── clothes
+  ├── clothes_mask
+  ├── densepose
+  ├── parsing
+  ├── mmpose_clothes
+  ├── mmpose_human
 ```
 `./downloaded_data`: Downloaded original raw human images. The images under the folder are no longer needed once the preprocessing is finished.
 
