@@ -19,7 +19,6 @@ We provide the image links of our dataset and their annotations in the zip files
    
 After the above steps, your directory structure should look like
 ```bash
-README.md
 get_wpose_data.py
 get_wvton_data.py
 downloaded_data
@@ -47,7 +46,6 @@ wpose
    
 After the above steps, your directory structure should look like
 ```bash
-README.md
 get_wpose_data.py
 get_wvton_data.py
 cl_downloaded_data
