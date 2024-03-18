@@ -20,7 +20,6 @@ We provide the image links of our dataset and their annotations in the zip files
 After the above steps, your directory structure should look like
 ```bash
 get_wpose_data.py
-get_wvton_data.py
 downloaded_data
 wpose
   ├── README
@@ -46,7 +45,6 @@ wpose
    
 After the above steps, your directory structure should look like
 ```bash
-get_wpose_data.py
 get_wvton_data.py
 cl_downloaded_data
 downloaded_data
@@ -76,6 +74,20 @@ wvton
 
 **L-40K**
 
+1) Download the annotations [l-40k.zip]() and unzip it under the current directory.
+2) Run `python get_laion_data.py`. This will download and preprocess the raw images. The preprocessed images will be stored at `./l-40k/images`. In our preprocessing pipeline, we resize the image's longest side to 1024 pixels.
+   
+After the above steps, your directory structure should look like
+```bash
+get_laion_data.py
+l-40k
+  ├── README
+  ├── image_urls.txt
+  ├── test_data.pkl
+  ├── images
+  ├── densepose
+  ├── parsing
+```
 - [x] OOD test data release.
 - [ ] L-40K traininig data release.
 - [ ] Inference code release.
