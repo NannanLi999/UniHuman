@@ -9,6 +9,12 @@ Python 3.8
 ## Data Preparation
 We provide the image links of our dataset and their annotations in the zip files. See below for detailed instructions. Please note that we do not own the copyright of the images. It is solely your responsibility to check the original licenses of the images before using them. Any use of the images is at your own discretion and risk.
 
+| Dataset | No. of Train Images | No. of Test Pairs | 
+| --- | --- | --- |
+| WPose | N/A | 2304 |
+| WVTON | N/A | 440 |
+| LH-400K | 409,270 | N/A |
+
 ### Test Data
 **Reposing Dataset: WPose**  
 
@@ -74,20 +80,23 @@ wvton
 
 **L-40K**
 
-1) Download the annotations [l-40k.zip]() and unzip it under the current directory.
-2) Run `python get_laion_data.py`. This will download and preprocess the raw images. The preprocessed images will be stored at `./l-40k/images`. In our preprocessing pipeline, we resize the image's longest side to 1024 pixels.
+1) Download the annotations [lh-400k.zip]() and unzip it under the current directory.
+2) Run `python get_laion_data.py`. This will download and preprocess the raw images. The preprocessed images will be stored at `./lh-400k/images`. In our preprocessing pipeline, we resize the image's longest side to 512 pixels.
    
 After the above steps, your directory structure should look like
 ```bash
 get_laion_data.py
-l-40k
+lh-400k
   ├── README
   ├── image_urls.txt
-  ├── test_data.pkl
+  ├── train_data.pkl
   ├── images
   ├── densepose
   ├── parsing
 ```
+
+At the time of releasing this dataset, xxxxx image urls are still valid and we provide the annotations of these images.
+
 - [x] OOD test data release.
 - [ ] L-40K traininig data release.
 - [ ] Inference code release.
