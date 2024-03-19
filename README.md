@@ -97,10 +97,10 @@ lh-400k
   ├── parsing
 ```
 
-At the time of releasing this dataset, xxxxx image urls are still valid and we provide the annotations of these images.
+At the time of releasing this dataset, 408,520 image urls are still valid, so we provide the annotations of these images.
 
 - [x] OOD test data release.
-- [ ] L-40K traininig data release.
+- [x] L-40K traininig data release.
 - [ ] Inference code release.
 - [ ] Training code release.
   
