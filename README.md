@@ -80,6 +80,8 @@ wvton
 
 **L-40K**
 
+![ ](/assets/lh-400k.png)
+
 1) Download the annotations [lh-400k.zip]() and unzip it under the current directory.
 2) Run `python get_laion_data.py`. This will download and preprocess the raw images. The preprocessed images will be stored at `./lh-400k/images`. In our preprocessing pipeline, we resize the image's longest side to 512 pixels.
    
