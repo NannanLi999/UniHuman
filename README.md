@@ -76,13 +76,17 @@ wvton
 
 `./wvton`: Preprocessed images and annotations.
 
+**Other Public Datasets**
+
+See [VITON-HD](https://github.com/shadow2496/VITON-HD), [DressCode](https://github.com/aimagelab/dress-code) and [DeepFashion-Multimodal](https://github.com/yumingj/DeepFashion-MultiModal).
+
 ### Training Data
 
-**L-40K**
+**LH-400K**
 
 ![ ](/assets/lh-400k.png)
 
-1) Download the annotations [lh-400k.zip]() and unzip it under the current directory.
+1) Download the annotations [lh-400k.zip](https://drive.google.com/file/d/1zZZVjH7CNy1qI5ychHMZ_Kh1LjR5Q6PT/view?usp=sharing) and unzip it under the current directory.
 2) Run `python get_laion_data.py`. This will download and preprocess the raw images. The preprocessed images will be stored at `./lh-400k/images`. In our preprocessing pipeline, we resize the image's longest side to 512 pixels.
    
 After the above steps, your directory structure should look like
@@ -97,7 +101,10 @@ lh-400k
   ├── parsing
 ```
 
-At the time of releasing this dataset, 408,520 image urls are still valid, so we provide the annotations of these images.
+At the time of releasing this dataset, 408,520 image urls are still valid.
+
+
+### TODO
 
 - [x] OOD test data release.
 - [x] L-40K traininig data release.
