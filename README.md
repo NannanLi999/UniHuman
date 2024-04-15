@@ -1,5 +1,5 @@
 # UniHuman
-This repository provides the official code for CVPR 2024 paper UniHuman: A Unified Model For Editing Human Images in the Wild.
+This repository provides the official code for CVPR 2024 paper UniHuman: A Unified Model For Editing Human Images in the Wild. This work was conducted during Nannan Li's Summer 2023 internship at Adobe Research.
 
 ## Environment Requirement
 Python 3.8
@@ -16,12 +16,17 @@ We provide the image links of our dataset and their annotations in the zip files
 | LH-400K | 409,270 | N/A |
 
 ### Test Data
+
+**All the download links of .zip files will be released a a later date.**
+
 **Reposing Dataset: WPose**  
 
 ![ ](/assets/wpose.png)
 
-1) Download the annotations [wpose.zip](https://drive.google.com/file/d/1vFR5vT8QInP3Zd0D60e0BRZ9c2Trl5bo/view?usp=drive_link) and unzip it under the current directory.
+1) Download the annotations wpose.zip and unzip it under the current directory.
 2) Run `python get_wpose_data.py`. This will download and preprocess the raw images. The downloaded images will be stored at `./downloaded_data`, and the preprocessed images will be saved to `./wpose/images`. In our preprocessing pipeline, we crop a rectangle centering the subject in the image and resize its longest side to 1024 pixels.
+
+<!---[wpose.zip](https://drive.google.com/file/d/1vFR5vT8QInP3Zd0D60e0BRZ9c2Trl5bo/view?usp=drive_link)--->
    
 After the above steps, your directory structure should look like
 ```bash
@@ -45,9 +50,11 @@ wpose
 
 <img src="assets/wvton.png" height="300">
 
-1) Download the annotations [wvton.zip](https://drive.google.com/file/d/1NsTV23n3KDs9eKybE1p8uE7mlSREqlHe/view?usp=sharing) and unzip it under the current directory.
+1) Download the annotations wvton.zip and unzip it under the current directory.
 2) Download the clothing images in JPEG format *manually* using the urls provided in `./wvton/clothing_urls.txt`. Put these clothing images in a new folder named `./cl_downloaded_data`. Do NOT change the file names of the downloaded clothing images.
 3) Run `python get_wvton_data.py`. This will download the human images and preprocess all images. The downloaded human images will be stored at `./downloaded_data`. The preprocessed images will be saved at `./wvton/images` and `./wvton/clothes`. In our preprocessing pipeline, we crop a rectangle in the image and resize its longest side to 1024 pixels.
+
+<!---[wvton.zip](https://drive.google.com/file/d/1NsTV23n3KDs9eKybE1p8uE7mlSREqlHe/view?usp=sharing)--->
    
 After the above steps, your directory structure should look like
 ```bash
@@ -86,8 +93,10 @@ See [VITON-HD](https://github.com/shadow2496/VITON-HD), [DressCode](https://gith
 
 ![ ](/assets/lh-400k.png)
 
-1) Download the annotations [lh-400k.zip](https://drive.google.com/file/d/1zZZVjH7CNy1qI5ychHMZ_Kh1LjR5Q6PT/view?usp=sharing) and unzip it under the current directory.
+1) Download the annotations lh-400k.zip and unzip it under the current directory.
 2) Run `python get_laion_data.py`. This will download and preprocess the raw images. The preprocessed images will be stored at `./lh-400k/images`. In our preprocessing pipeline, we resize the image's longest side to 512 pixels.
+
+<!---[lh-400k.zip](https://drive.google.com/file/d/1zZZVjH7CNy1qI5ychHMZ_Kh1LjR5Q6PT/view?usp=sharing)--->
    
 After the above steps, your directory structure should look like
 ```bash
